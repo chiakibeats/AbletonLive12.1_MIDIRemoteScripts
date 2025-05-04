@@ -1,0 +1,21 @@
+# Decompiled with PyLingual (https://pylingual.io)
+# Internal filename: ..\..\..\output\Live\win_64_static\Release\python-bundle\MIDI Remote Scripts\Komplete_Kontrol_S_Mk3\midi.py
+# Bytecode version: 3.11a7e (3495)
+# Source timestamp: 2025-03-17 14:05:58 UTC (1742220358)
+
+from ableton.v3.control_surface.midi import SYSEX_START
+MIDI_CHANNEL = 15
+SYSEX_HEADER = (SYSEX_START, 0, 33, 9, 0, 0, 68, 67, 1, 0)
+FOCUS_FOLLOW_HEADER = SYSEX_HEADER + (65, 0, 0)
+TRACK_TYPE_HEADER = SYSEX_HEADER + (64,)
+TRACK_SELECT_HEADER = SYSEX_HEADER + (66,)
+TRACK_MUTE_HEADER = SYSEX_HEADER + (67,)
+TRACK_SOLO_HEADER = SYSEX_HEADER + (68,)
+TRACK_ARM_HEADER = SYSEX_HEADER + (69,)
+TRACK_VOLUME_HEADER = SYSEX_HEADER + (70, 0)
+TRACK_PAN_HEADER = SYSEX_HEADER + (71, 0)
+TRACK_NAME_HEADER = SYSEX_HEADER + (72, 0)
+TRACK_METER_HEADER = SYSEX_HEADER + (73, 2, 0)
+TRACK_MUTE_VIA_SOLO_HEADER = SYSEX_HEADER + (74,)
+DEFAULT_TRACK_TYPE = 1
+MASTER_TRACK_TYPE = 6

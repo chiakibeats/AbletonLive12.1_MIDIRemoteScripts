@@ -1,0 +1,15 @@
+# Decompiled with PyLingual (https://pylingual.io)
+# Internal filename: ..\..\..\output\Live\win_64_static\Release\python-bundle\MIDI Remote Scripts\Launch_Control\ButtonSysexControl.py
+# Bytecode version: 3.11a7e (3495)
+# Source timestamp: 2025-03-17 14:05:58 UTC (1742220358)
+
+from _Framework.SysexValueControl import SysexValueControl
+
+class ButtonSysexControl(SysexValueControl):
+    pass
+
+    def set_light(self, value):
+        return
+
+    def is_momentary(self):
+        return False
